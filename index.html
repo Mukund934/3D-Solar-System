@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System 3D | EmptyCup Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="solar-canvas"></canvas>
+        
+        <div id="control-panel" class="control-panel">
+            <div class="panel-header">
+                <h2>Orbital Speed Controls</h2>
+                <button id="toggle-panel" class="toggle-btn">▼</button>
+            </div>
+            
+            <div class="panel-content">
+                <div class="global-controls">
+                    <button id="pause-btn" class="control-btn">Pause</button>
+                    <button id="reset-btn" class="control-btn">Reset</button>
+                    <label class="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                        Light Mode
+                    </label>
+                </div>
+                
+                <div id="planet-controls" class="planet-controls"></div>
+            </div>
+        </div>
+        
+        <div id="info-panel" class="info-panel hidden">
+            <h3 id="planet-name">Planet Name</h3>
+            <p id="planet-info">Click on a planet to see details</p>
+            <button id="close-info" class="close-btn">×</button>
+        </div>
+        
+        <div id="loading" class="loading-screen">
+            <div class="spinner"></div>
+            <p>Loading Solar System...</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+ 
+    <script src="js/planets.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
