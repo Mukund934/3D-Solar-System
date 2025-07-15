@@ -3,166 +3,119 @@
 
 # 🌌 3D Solar System – Real-Time Orbital Simulation
 
-🪐 A stunning real-time 3D simulation of the Solar System with planetary orbits, animations, and interactive UI. Built using **Three.js** and **vanilla JavaScript**, this project offers a professional experience with zero dependencies or builds required.
+🪐 A stunning real-time 3D simulation of the Solar System with planetary orbits, animations, and interactive UI. Built using Three.js and vanilla JavaScript, this project offers a professional experience with zero dependencies or builds required.
 
 ---
 
-## 🧪 How to Run This Project
+## ⚙️ How to Run the Project
 
-After downloading and extracting the zip file, you have **two options** to run this project:
+### 🔓 Step 1: Unzip the Project
 
----
+After downloading the project ZIP, extract it to a folder.
 
-### ✅ Method 1 – Simple HTML Preview (Recommended for Demo)
-
-1. **Unzip** the file: `Mukund Thakur.zip`
-2. **Open VS Code** (or any code editor)
-3. Navigate to the extracted folder
-4. **Right-click** `index.html` → Click **“Open with Live Server”**
-
-   * *(If you don't have Live Server, simply double-click `index.html` to open it in the browser)*
-5. You're ready to explore the Solar System 🌍
+Then open the extracted folder in **VS Code** or any modern code editor.
 
 ---
 
-### ✅ Method 2 – Using `npm` and a Local Server (for Dev Mode)
+### ✅ Method 1: Run with Just HTML (No Node.js)
 
-> Requires Node.js installed.
+1. Open the project folder
+2. Locate and open `index.html` in your browser (just double-click or drag into browser)
 
-1. Unzip the folder
-2. Open the folder in VS Code
-3. In the terminal, run:
-
-   ```bash
-   npm install
-   npm run dev
-   ```
-4. Open `http://localhost:3000` in your browser
-5. Solar System loads and runs in development mode
+✅ Works instantly. No need for installation.
 
 ---
 
-## 📖 Overview
+### 💻 Method 2: Run with `npm run dev` (Optional Advanced Method)
 
-This project was built as part of the **Frontend Assignment** for internship evaluation. It simulates planetary orbits in 3D with complete interactivity and customization. The focus is on:
+If you prefer a local development server:
 
-* Realistic visuals and physics
-* Clean UI/UX
-* Optimized performance
-* Zero external dependencies (except Three.js via CDN)
+1. Ensure you have **Node.js** and **npm** installed
+2. Open terminal in the project folder
+3. Run:
+
+```bash
+npm install
+npm run dev
+```
+
+4. Open browser and visit: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🌐 Live Preview
+
+🛰️ **Hosted on Vercel:**
+[https://3-d-solar-system-git-main-mukund-thakurs-projects.vercel.app/](https://3-d-solar-system-git-main-mukund-thakurs-projects.vercel.app/)
+
+---
+
+## 📁 Download & Demo Video
+
+📦 **Google Drive Folder (Demo Video + Project ZIP):**
+[https://drive.google.com/drive/folders/1FXtx01kBDpjtVA1J5X40dWh0Adq4-z1U?usp=sharing](https://drive.google.com/drive/folders/1FXtx01kBDpjtVA1J5X40dWh0Adq4-z1U?usp=sharing)
+
+---
+
+## 🔗 GitHub Repository
+
+📌 **GitHub Source Code:**
+[https://github.com/Mukund934/3D-Solar-System](https://github.com/Mukund934/3D-Solar-System)
 
 ---
 
 ## 🌟 Features
 
-### ☀️ Core Experience
-
-* Real-time 3D solar system with all 8 planets
-* Accurate scale for radius, distance, and speed
-* Custom orbital motion using Three.js
-* UI sliders to control speed of individual planets
-* Interactive info panel per planet
-
-### 🎨 UI & Accessibility
-
-* Dark/Light theme toggle
-* Responsive UI for mobile and tablet
-* Glassmorphism control and info panels
-* Keyboard controls:
-
-  * `Space` – Pause/Resume
-  * `R` – Reset
-  * `T` – Theme toggle
+* 🌍 All 8 planets in 3D with orbital motion
+* 🎮 Smooth camera controls (drag, zoom, touch)
+* ⚡ Real-time orbital speed controls
+* 🌗 Dark/light mode toggle
+* 🧩 Modular code with clean structure
+* 📱 Fully responsive for mobile and desktop
 
 ---
 
-## 📁 File Structure
+## 🧠 Tech Stack
 
-```bash
-├── index.html           # Main entry point
-├── style.css            # Styling for layout and UI
+* 🎮 Three.js (WebGL)
+* 🌐 HTML, CSS, JavaScript
+* 🧪 Modular JS (main.js, planets.js, controls.js)
+* ⚙️ No build tools required
+* 🚀 Optional dev server via Node/npm
+
+---
+
+## 📂 File Structure
+
+```
+├── index.html
+├── style.css
 ├── js/
-│   ├── main.js          # Initializes Three.js and animation
-│   ├── planets.js       # Planet data, creation, and motion
-│   └── controls.js      # Camera controls and UI interactions
-├── README.md            # Project documentation
-├── package.json         # For npm-based method (optional)
-└── demo.mp4             # Demo video showing the working app
+│   ├── main.js
+│   ├── planets.js
+│   └── controls.js
+└── assets/
+    └── textures, models, etc.
 ```
 
 ---
 
 ## 🎮 Controls
 
-### Mouse / Touch
-
-| Action       | Description                 |
-| ------------ | --------------------------- |
-| Drag         | Rotate camera around system |
-| Scroll/Pinch | Zoom in/out                 |
-| Click Planet | Show detailed info panel    |
-
-### Keyboard
-
-| Key   | Action              |
-| ----- | ------------------- |
-| Space | Pause/Resume motion |
-| R     | Reset scene         |
-| T     | Toggle theme        |
-
+| Action           | Control                    |
+| ---------------- | -------------------------- |
+| Rotate View      | Drag mouse / touch         |
+| Zoom             | Scroll / pinch             |
+| Pause            | Spacebar or "Pause" button |
+| Reset            | "R" key or "Reset" button  |
+| Theme Toggle     | "T" key or toggle switch   |
+| View Planet Info | Click on any planet        |
 
 ---
 
-## 📱 Mobile Support
+## 🎥 Video Demo
 
-* Fully responsive layout
-* Touch drag and pinch to zoom
-* Performance optimization for lower-end devices
-* Bigger tap targets for controls
+The demo video (both desktop and mobile versions) is available in the shared **Google Drive** folder linked above.
 
 ---
 
-## ✏️ Customization
-
-* Add planets in `js/planets.js` under `PLANET_DATA`
-* Adjust:
-
-  * `radius`: size of the planet
-  * `distance`: from the Sun
-  * `baseSpeed`: orbital speed
-  * `color`: display color
-
-* The UI will auto-generate new sliders based on this data
-
----
-
-## 🔬 Built With
-
-| Tool              | Purpose                     |
-| ----------------- | --------------------------- |
-| **Three.js**      | 3D rendering and animations |
-| **HTML/CSS**      | Page structure and styling  |
-| **JavaScript**    | Scene setup and logic       |
-| **No Frameworks** | Simple and dependency-free  |
-
----
-
-## 📥 Included in ZIP
-
-✅ All Code Files
-✅ `README.md`
-✅ Demo Video – `demo.mp4`
-
----
-
-## 📩 Submission Format
-
-* A zip file: `Mukund Thakur.zip`
-* Subject Line: **Frontend Assignment – Mukund Thakur**
-* Contents:
-
-  * Complete project files
-  * `README.md` with setup instructions
-  * `demo.mp4` video showing functionality
-
----
